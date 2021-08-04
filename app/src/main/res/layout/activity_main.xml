@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayaout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C13535"
+    android:backgroundTint="#5A5A5A"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Texto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center|right"
+        android:inputType="number"
+        android:textColor="#F4F4F4"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Boton_Suma"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#85488F"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_0"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_Resta"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Boton_3" />
+
+    <Button
+        android:id="@+id/Boton_Division"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="/"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#85488F"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_Resta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Boton_C" />
+
+    <Button
+        android:id="@+id/Boton_Resta"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#85488F"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_Igual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Boton_Multiplicacion" />
+
+    <Button
+        android:id="@+id/Boton_5"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_2"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_6"
+        app:layout_constraintStart_toEndOf="@+id/Boton_4" />
+
+    <Button
+        android:id="@+id/Boton_Multiplicacion"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="X"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#85488F"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_Suma"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_Division"
+        app:layout_constraintStart_toEndOf="@+id/Boton_6" />
+
+    <Button
+        android:id="@+id/Boton_1"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_0"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Boton_4"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_1"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Boton_0"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_Igual"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Boton_9"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="9"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_6"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_C"
+        app:layout_constraintStart_toEndOf="@+id/Boton_8" />
+
+    <Button
+        android:id="@+id/Boton_6"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_3"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_Multiplicacion"
+        app:layout_constraintStart_toEndOf="@+id/Boton_5" />
+
+    <Button
+        android:id="@+id/Boton_7"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_4"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Boton_3"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_0"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_Suma"
+        app:layout_constraintStart_toEndOf="@+id/Boton_2" />
+
+    <Button
+        android:id="@+id/Boton_C"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="C"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#85488F"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_Multiplicacion"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_Division"
+        app:layout_constraintStart_toEndOf="@+id/Boton_9" />
+
+    <Button
+        android:id="@+id/Boton_8"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="8"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_5"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_9"
+        app:layout_constraintStart_toEndOf="@+id/Boton_7" />
+
+    <Button
+        android:id="@+id/Boton_2"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        android:text="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#434746"
+        app:layout_constraintBottom_toTopOf="@+id/Boton_0"
+        app:layout_constraintEnd_toStartOf="@+id/Boton_3"
+        app:layout_constraintStart_toEndOf="@+id/Boton_1" />
+
+    <Button
+        android:id="@+id/Boton_Igual"
+        style="@style/Widget.MaterialComponents.TimePicker.Button"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="0"
+        android:text="="
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F4F4F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#85488F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Boton_Suma" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
